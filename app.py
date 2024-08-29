@@ -41,30 +41,29 @@ commodity_dict = {
 
 annual_rainfall = [29, 21, 37.5, 30.7, 52.6, 150, 299, 251.7, 179.2, 70.5, 39.8, 10.9]
 base = {
-    "Paddy": 1245.5,
-    "Arhar": 3200,
-    "Bajra": 1175,
-    "Barley": 980,
-    "Copra": 5100,
-    "Cotton": 3600,
-    "Sesamum": 4200,
-    "Gram": 2800,
-    "Groundnut": 3700,
-    "Jowar": 1520,
-    "Maize": 1175,
-    "Masoor": 2800,
-    "Moong": 3500,
-    "Niger": 3500,
-    "Ragi": 1500,
-    "Rape": 2500,
-    "Jute": 1675,
-    "Safflower": 2500,
-    "Soyabean": 2200,
-    "Sugarcane": 2250,
-    "Sunflower": 3700,
-    "Urad": 4300,
-    "Wheat": 1350
-
+    "Paddy": 2275,
+    "Arhar": 7550,
+    "Bajra": 2625,
+    "Barley": 1850,
+    "Copra": 12000,
+    "Cotton": 7121,
+    "Sesamum": 9267,
+    "Gram": 5440,
+    "Groundnut": 6783,
+    "Jowar": 3421,
+    "Maize": 2225,
+    "Masoor": 9800,
+    "Moong": 8682,
+    "Niger": 8717,
+    "Ragi": 4290,
+    "Rape": 5450,
+    "Jute": 5335,
+    "Safflower": 5800,
+    "Soyabean": 4892,
+    "Sugarcane": 340,
+    "Sunflower": 7280,
+    "Urad": 7400,
+    "Wheat": 2275
 }
 commodity_list = []
 
@@ -465,7 +464,7 @@ if __name__ == "__main__":
     wheat = Commodity(commodity_dict["wheat"])
     commodity_list.append(wheat)
 
-    app.run()
+    app.run(debug=False,host='0.0.0.0')
 
 
 
